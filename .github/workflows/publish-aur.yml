@@ -1,18 +1,14 @@
 name: Publish to AUR
 
 on:
-  push:
-    branches: [master]
-    paths:
-      - '.github/workflows/publish-aur.yml'
   workflow_dispatch:
     inputs:
       version:
         description: 'Version to publish (leave empty for latest PyPI)'
         required: false
   schedule:
-    # Check daily for new PyPI versions
-    - cron: '0 6 * * *'
+    # Check weekly for new PyPI versions (every Monday at 6:00 UTC)
+    - cron: '0 6 * * 1'
 
 jobs:
   update-aur:
