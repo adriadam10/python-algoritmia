@@ -1,24 +1,27 @@
-# Paquete AUR para python-algoritmia
+# Paquetes AUR para python-algoritmia
 
-Este repo contiene los archivos necesarios para publicar y mantener el paquete `python-algoritmia` en [AUR (Arch User Repository)](https://aur.archlinux.org/).
+Este repo contiene los archivos necesarios para publicar y mantener los paquetes `python-algoritmia` y `python-easypaint` en [AUR (Arch User Repository)](https://aur.archlinux.org/).
 
-Este paquete se basa en el paquete de Python [algoritmia](https://github.com/DavidLlorens/algoritmia) desarrollado por [David Llorens](https://github.com/DavidLlorens).
+Ambos paquetes se basan en librerías desarrolladas por [David Llorens](https://github.com/DavidLlorens):
+
+- [algoritmia](https://github.com/DavidLlorens/algoritmia) - Librería de algoritmos y estructuras de datos
+- [easypaint](https://github.com/DavidLlorens/easypaint) - Biblioteca de dibujo para Python 3
 
 ## ¿Qué es AUR?
 
-AUR es el repositorio de la comunidad de Arch Linux. Permite a los usuarios de Arch instalar este paquete fácilmente con:
+AUR es el repositorio de la comunidad de Arch Linux. Permite a los usuarios de Arch instalar estos paquetes fácilmente con:
 
 ```bash
-yay -S python-algoritmia
+yay -S python-algoritmia python-easypaint
 # o con cualquier otro AUR helper
 ```
 
 ## Archivos
 
-| Archivo              | Descripción                                        |
-|----------------------|----------------------------------------------------|
-| `PKGBUILD`           | Receta de construcción del paquete para Arch Linux |
-| `update-pkgbuild.sh` | Script para actualizar versión y checksum          |
+| Directorio       | Descripción                            |
+|------------------|----------------------------------------|
+| `aur/`           | PKGBUILD para python-algoritmia        |
+| `aur-easypaint/` | PKGBUILD para python-easypaint         |
 
 ## Automatización
 
