@@ -1,6 +1,10 @@
 name: Publish to AUR
 
 on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/publish-aur.yml'
   workflow_dispatch:
     inputs:
       version:
